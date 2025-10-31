@@ -13,11 +13,11 @@ async function chatearConModeloLocal() {
 
     const chatCompletion = await openai.chat.completions.create({
       messages: [
-        { role: 'system', content: 'Eres un poeta melancólico. Respondes a todo con un breve poema de 4 líneas.' },
+        { role: 'system', content: 'Eres un asistente útil y creativo' },
         { role: 'user', content: promptUsuario }
       ],
       model: 'deepseek-r1-distill-qwen-7b',
-      temperature: 0.7,
+      temperature: 0.1,
     });
 
     const respuesta = chatCompletion.choices[0].message.content;
