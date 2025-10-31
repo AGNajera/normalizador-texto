@@ -13,8 +13,8 @@ async function chatearConModeloLocal() {
 
     const chatCompletion = await openai.chat.completions.create({
       messages: [
-        { role: 'system', content: 'Eres un asistente útil y creativo' },
-        { role: 'user', content: promptUsuario }
+        { role: 'system', content: 'Eres un analista de negocios experto. Tu trabajo es resumir texto en 3 bullet points clave.'},
+        { role: 'user', content: `Genera un resumen de 3 bullet points del siguiente reporte: \n\n {promptUsuario}` }
       ],
       model: 'deepseek-r1-distill-qwen-7b',
       temperature: 1.2,
