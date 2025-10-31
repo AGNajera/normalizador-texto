@@ -17,7 +17,7 @@ async function chatearConModeloLocal() {
         { role: 'user', content: promptUsuario }
       ],
       model: 'deepseek-r1-distill-qwen-7b',
-      temperature: 0.1,
+      temperature: 1.2,
     });
 
     const respuesta = chatCompletion.choices[0].message.content;
