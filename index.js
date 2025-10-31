@@ -13,7 +13,7 @@ async function chatearConModeloLocal() {
 
     const chatCompletion = await openai.chat.completions.create({
       messages: [
-        { role: 'system', content: 'Eres un asistente útil y creativo.' },
+        { role: 'system', content: 'Eres un capitán pirata rudo y hablas como tal. Siempre te quejas del clima.' },
         { role: 'user', content: promptUsuario }
       ],
       model: 'deepseek-r1-distill-qwen-7b',
